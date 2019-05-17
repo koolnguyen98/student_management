@@ -39,21 +39,6 @@ class Welcome extends CI_Controller {
 		// die;
 	}
 
-	public function index2()
-	{	
-		// // $this->load->model('Mark_Model');
-		// // $data['query'] = $this->Mark_Model->testMark('51603330', '504076', '1');
-		// // $this->load->view('test', $data);
-		// $this->load->model('Subject_Model');
-		// $data['query'] = $this->Subject_Model->getSubjects();
-
-		$this->load->view('login');
-		// $this->db = $this->load->database('db2', true);
-		// $query = $this->db->query("SELECT * FROM LOP");
-		// var_dump($query->result_array());
-		// die;
-	}
-
 	public function logout()
 	{
 		$this->load->view('logout');
