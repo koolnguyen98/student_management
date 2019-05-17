@@ -51,14 +51,12 @@ class Welcome extends CI_Controller {
 
 	public function viewDanhmuclop()
 	{
-		
-
-
 		$this->load->model('Class_Model');
 		$query = $this->Class_Model->getClass();
-		// echo '<pre>';
-		// var_dump(expression)
-		// echo '</pre>';
+		echo '<pre>';
+		var_dump(expression)
+		echo '</pre>';
+		die;
 		$data['query1'] = $query['query1'];
 		$data['query2'] = $query['query2'];
 		$this->load->view('danhmuclop', $data);
